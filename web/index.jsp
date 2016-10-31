@@ -2,6 +2,10 @@
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+//String baseUrl = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort();
+String baseUrl = "http://www.bytespace.cn";
+
+
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -23,13 +27,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   <br>
   <br>
-  <br>
-  	<a href="http://localhost:8080/web/groups">http://localhost:8080/web/groups  此接口返回infos接口使用的type值，这些值可在客户端写死</a>
+    <br>
+  	<a href="<%=baseUrl%>/web/groups"><%=baseUrl%>/web/groups  此接口返回infos接口使用的type值，这些值可在客户端写死</a>
   	<br>
-    <a href="http://localhost:8080/web/infos?pagesize=20&pageindex=1&type=gndy">http://localhost:8080/web/infos?pagesize=20&pageindex=1&type=gndy</a>
+    <a href="<%=baseUrl%>/web/infos?pagesize=20&pageindex=1&type=gndy"><%=baseUrl%>/web/infos?pagesize=20&pageindex=1&type=gndy</a>
     <br>
-    <a href="http://localhost:8080/web/detail?detailid=3000">http://localhost:8080/web/detail?detailid=3000</a>
+    <a href="<%=baseUrl%>/web/detail?detailid=3000"><%=baseUrl%>/web/detail?detailid=3000</a>
     <br>
-    <a href="http://localhost:8080/web/search?searchKey=love&pagesize=20&pageindex=1">http://localhost:8080/web/search?searchKey=%E6%88%98%E4%BA%89&pagesize=20&pageindex=1</a>
+    <a href="<%=baseUrl%>/web/search?searchKey=love&pagesize=20&pageindex=1"><%=baseUrl%>/web/search?searchKey=%E6%88%98%E4%BA%89&pagesize=20&pageindex=1</a>
+    <br>
+    <a href="<%=baseUrl%>/web/infos?pagesize=10&pageindex=1&type=gndy&haspic=1"><%=baseUrl%>/web/infos?pagesize=10&pageindex=1&type=gndy&haspic=1</a>
+
   </body>
 </html>

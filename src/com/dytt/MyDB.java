@@ -40,7 +40,7 @@ public class MyDB extends DBHelper {
 		return infos;
 	}
 	
-	public static List<InfoSimple> getInfoSimples(int pagesize,int pageindex,String type,int year){
+	public static List<InfoSimple> getInfoSimples(int pagesize,int pageindex,String type,int year,int haspic){
 		StringBuilder sql = new StringBuilder("select id,name,time from detail");
 		if(type!=null){
 			if("zongyi".equals(type)){
@@ -63,6 +63,16 @@ public class MyDB extends DBHelper {
 		Transaction trans = session.beginTransaction();		
 		SQLQuery query = session.createSQLQuery(sql.toString()).addEntity(InfoSimple.class);
 		List<InfoSimple> infos = query.list();
+
+		if(haspic==1){
+			for(InfoSimple info:infos){
+				SQLQuery qurey = session.createSQLQuery("select imageUrl from imageurls as b where b.detailid = "+info.getId()+" limit 0,1");
+				List<String> datas = qurey.list();
+				if(datas.size()>0){
+					info.setPic(datas.get(0));
+				}
+			}
+		}
 		trans.commit();
 		session.close();
 		return infos;
@@ -214,6 +224,18 @@ public class MyDB extends DBHelper {
 		session.close();
 		return datas;
 	}
+	public static String getFirstImageurl(int detailid) {
+		Session session = getSession();
+		Transaction trans = session.beginTransaction();
+		SQLQuery qurey = session.createSQLQuery("select imageUrl from imageurls as b where b.detailid = "+detailid+" limit 0,1");
+		List<String> datas = qurey.list();
+		trans.commit();
+		session.close();
+		if(datas.size()>0){
+			return datas.get(0);
+		}
+		return "";
+	}
 
 	public static String getDetailContent(int detailid) {
 		Session session = getSession();
@@ -252,10 +274,13 @@ public class MyDB extends DBHelper {
 	}
 	
 	public static void main(String[] args) {
-		LoginHistory history = new LoginHistory();
-		history.setDeviceId("fdafdafdaf");
-		history.setLoginTime("2014-11-23");
-		insertLoginHistory(history);
+//		LoginHistory history = new LoginHistory();
+//		history.setDeviceId("fdafdafdaf");
+//		history.setLoginTime("2014-11-23");
+//		insertLoginHistory(history);
+
+		String url = getFirstImageurl(22);
+		System.out.println(url);
 	}
 	
 }

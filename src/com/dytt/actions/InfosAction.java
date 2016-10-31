@@ -14,17 +14,17 @@ public class InfosAction extends BaseActionSupport {
 	private int pageindex = 0;
 	private String type;
 	private int year;
+	private int haspic;
     public String getInfoList() {
-    	String key = "getInfoList-"+type+"-"+year+"-"+pagesize+"-"+pageindex;;
+    	String key = "getInfoList-"+type+"-"+year+"-"+pagesize+"-"+pageindex+"-"+haspic;
     	String cache = Cache.getCache(key);
     	if(cache!=null){
     		return resSucceedCache(cache);
     	}
     	long start = System.currentTimeMillis();
     	Logger.info(this, "start pageIndex:"+pageindex+" "+pagesize);
-    	List<InfoSimple> infos = MyDB.getInfoSimples(pagesize, pageindex, type,year);
-    	
-    	
+    	List<InfoSimple> infos = MyDB.getInfoSimples(pagesize, pageindex, type, year, haspic);
+
     	int totalPageNum = 0;
     	String totalKey = "getDetailCount-"+type+"-"+year;
     	String totalCache = Cache.getCache(totalKey);
@@ -67,11 +67,15 @@ public class InfosAction extends BaseActionSupport {
 		return year;
 	}
 
-
-
 	public void setYear(int year) {
 		this.year = year;
 	}
-	
-	
+
+	public int getHaspic() {
+		return haspic;
+	}
+
+	public void setHaspic(int haspic) {
+		this.haspic = haspic;
+	}
 }

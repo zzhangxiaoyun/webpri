@@ -5,6 +5,7 @@ public class InfoSimple {
 	private int id;
 	private String name;
 	private String time;
+	private String pic;
 	
 	public String getName() {
 		return name;
@@ -25,5 +26,13 @@ public class InfoSimple {
 	}
 	public void setTime(String time) {
 		this.time = time;
+	}
+
+	public String getPic() {
+		return pic;
+	}
+
+	public void setPic(String pic) {
+		this.pic = pic;
 	}
 }
