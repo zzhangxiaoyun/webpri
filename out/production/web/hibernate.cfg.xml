@@ -32,6 +32,8 @@
 		<mapping resource="hbm/Feedback.hbm.xml"/>
 		<mapping resource="hbm/Config.hbm.xml"/>
 		<mapping resource="hbm/LoginHistory.hbm.xml"/>
+		<mapping resource="hbm/MovieGetInfo.hbm.xml"/>
+
 	</session-factory> 
 	
 </hibernate-configuration>

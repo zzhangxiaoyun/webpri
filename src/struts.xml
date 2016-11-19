@@ -15,5 +15,6 @@
 		<action name="feedbacks" method="getFeedback" class="com.dytt.actions.GetFeedbackAction" />
 		<action name="uploadfile" method="uploadfile" class="com.dytt.actions.UploadFileAction" />
 		<action name="start" method="getStart" class="com.dytt.actions.StartAction" />
+		<action name="movieget" method="movieGet" class="com.dytt.actions.MovieGetAction" />
 	</package>
 </struts>

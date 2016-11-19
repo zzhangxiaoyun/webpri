@@ -3,6 +3,7 @@ import java.math.BigInteger;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
+import com.dytt.entity.*;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
@@ -10,13 +11,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-
-import com.dytt.entity.Config;
-import com.dytt.entity.Detail;
-import com.dytt.entity.Feedback;
-import com.dytt.entity.Info;
-import com.dytt.entity.InfoSimple;
-import com.dytt.entity.LoginHistory;
 
 
 public class MyDB extends DBHelper {
@@ -272,6 +266,28 @@ public class MyDB extends DBHelper {
 		session.close();
 		return true;
 	}
+
+	public static boolean updateGetMove(String detailid){
+		Session session = getSession();
+		Transaction trans = session.beginTransaction();
+		SQLQuery query = session.createSQLQuery("select COUNT(*) from moveget as b where b.detailId = "+detailid);
+		List<BigInteger> list = query.list();
+		if(list.get(0).intValue()>0){
+           session.createSQLQuery("update moveget set count = count +1").executeUpdate();
+		}else {
+			session.save(new MovieGetInfo(0,detailid,1));
+		}
+		trans.commit();
+		session.close();
+
+
+		return true;
+	}
+
+
+
+
+
 	
 	public static void main(String[] args) {
 //		LoginHistory history = new LoginHistory();
@@ -279,8 +295,10 @@ public class MyDB extends DBHelper {
 //		history.setLoginTime("2014-11-23");
 //		insertLoginHistory(history);
 
-		String url = getFirstImageurl(22);
-		System.out.println(url);
+//		String url = getFirstImageurl(22);
+//		System.out.println(url);
+
+		updateGetMove(2222+"");
 	}
 	
 }
