@@ -16,28 +16,31 @@ public class InfosAction extends BaseActionSupport {
 	private int year;
 	private int haspic;
     public String getInfoList() {
-    	String key = "getInfoList-"+type+"-"+year+"-"+pagesize+"-"+pageindex+"-"+haspic;
-    	String cache = Cache.getCache(key);
-    	if(cache!=null){
-    		return resSucceedCache(cache);
-    	}
-    	long start = System.currentTimeMillis();
-    	Logger.info(this, "start pageIndex:"+pageindex+" "+pagesize);
-    	List<InfoSimple> infos = MyDB.getInfoSimples(pagesize, pageindex, type, year, haspic);
-
-    	int totalPageNum = 0;
-    	String totalKey = "getDetailCount-"+type+"-"+year;
-    	String totalCache = Cache.getCache(totalKey);
-    	if(totalCache!=null){
-    		totalPageNum = Integer.valueOf(totalCache);    			
-    	}else{
-    		totalPageNum = ( MyDB.getDetailCount(type,year)  +  pagesize  - 1) / pagesize; 
-    		Cache.setCache(totalKey, totalPageNum+"");
-    	}
-    	long end = System.currentTimeMillis();
-    	Logger.info(this, "use:"+(end-start));
-    	return resSucceed(new Pages(totalPageNum,infos),key);
+		if("hot".equals(type)){
+			return getHotList();
+		}else {
+			return getNomaiInfoList();
+		}
     }
+    private String getNomaiInfoList(){
+		long start = System.currentTimeMillis();
+		Logger.info(this, "start pageIndex:"+pageindex+" "+pagesize);
+		List<InfoSimple> infos = MyDB.getInfoSimples(pagesize, pageindex, type, year, haspic);
+		int totalPageNum = ( MyDB.getDetailCount(type,year)  +  pagesize  - 1) / pagesize;
+		long end = System.currentTimeMillis();
+		Logger.info(this, "use:"+(end-start));
+		return resSucceed(new Pages(totalPageNum,infos),null);
+	}
+
+	private String getHotList() {
+		long start = System.currentTimeMillis();
+		Logger.info(this, "start pageIndex:"+pageindex+" "+pagesize);
+		List<InfoSimple> infos = MyDB.getHotInfoSimples(pagesize, pageindex, year, haspic);
+		int totalPageNum = ( MyDB.getHotCount(year)  +  pagesize  - 1) / pagesize;
+		long end = System.currentTimeMillis();
+		Logger.info(this, "use:"+(end-start));
+		return resSucceed(new Pages(totalPageNum,infos),null);
+	}
     
 	public int getPagesize() {
 		return pagesize;

@@ -48,16 +48,58 @@ public class MyDB extends DBHelper {
 			int end = (year+1)*10000;
 			sql.append(" and time BETWEEN ").append(start).append(" and ").append(end);
 		}
-		
 		sql.append(" order by pagenumber desc");
 		sql.append(" limit ").append(pageindex*pagesize-pagesize).append(",").append(pagesize);
-		
-		
 		Session session = getSession();
 		Transaction trans = session.beginTransaction();		
 		SQLQuery query = session.createSQLQuery(sql.toString()).addEntity(InfoSimple.class);
 		List<InfoSimple> infos = query.list();
+		setMoviePic(haspic, session, infos);
+		trans.commit();
+		session.close();
+		return infos;
+	}
 
+	public static List<InfoSimple> getHotInfoSimples(int pagesize,int pageindex,int year,int haspic){
+		//SELECT d.id,d.`name`,d.time from detail as d,moveget as m WHERE d.id=m.detailId ORDER BY m.count desc
+		StringBuilder sql = new StringBuilder("SELECT d.id,d.`name`,d.time from detail as d,moveget as m WHERE d.id = m.detailId");
+		if(year!=0){
+			int start = year*10000;
+			int end = (year+1)*10000;
+			sql.append(" and time BETWEEN ").append(start).append(" and ").append(end);
+		}
+		sql.append(" ORDER BY m.count desc");
+		sql.append(" limit ").append(pageindex*pagesize-pagesize).append(",").append(pagesize);
+		Session session = getSession();
+		Transaction trans = session.beginTransaction();
+		SQLQuery query = session.createSQLQuery(sql.toString()).addEntity(InfoSimple.class);
+		List<InfoSimple> infos = query.list();
+
+		setMoviePic(haspic, session, infos);
+		trans.commit();
+		session.close();
+		return infos;
+	}
+
+	public static int getHotCount(int year){
+		StringBuilder sb = new StringBuilder("SELECT count(*) from detail as d,moveget as m WHERE d.id=m.detailId");
+		if(year!=0){
+			int start = year*10000;
+			int end = (year+1)*10000;
+			sb.append(" and time BETWEEN ").append(start).append(" and ").append(end);
+		}
+
+		Session session = getSession();
+		Transaction trans = session.beginTransaction();
+		Query query = session.createSQLQuery(sb.toString());
+		List<BigInteger> list = query.list();
+		int count = list.get(0).intValue();
+		trans.commit();
+		session.close();
+		return count;
+	}
+
+	private static void setMoviePic(int haspic, Session session, List<InfoSimple> infos) {
 		if(haspic==1){
 			for(InfoSimple info:infos){
 				SQLQuery qurey = session.createSQLQuery("select imageUrl from imageurls as b where b.detailid = "+info.getId()+" limit 0,1");
@@ -67,16 +109,13 @@ public class MyDB extends DBHelper {
 				}
 			}
 		}
-		trans.commit();
-		session.close();
-		return infos;
 	}
-	
+
+
 	/**
 	 * 
 	 * @param pagesize
 	 * @param pageindex
-	 * @param type
 	 * @return
 	 */
 	public static List<InfoSimple> searchInfoSimples(int pagesize,int pageindex,String key){
@@ -273,7 +312,7 @@ public class MyDB extends DBHelper {
 		SQLQuery query = session.createSQLQuery("select COUNT(*) from moveget as b where b.detailId = "+detailid);
 		List<BigInteger> list = query.list();
 		if(list.get(0).intValue()>0){
-           session.createSQLQuery("update moveget set count = count +1").executeUpdate();
+           session.createSQLQuery("update moveget as b set b.count = b.count +1 WHERE b.detailId = "+detailid).executeUpdate();
 		}else {
 			session.save(new MovieGetInfo(0,detailid,1));
 		}
