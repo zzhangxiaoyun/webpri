@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 import com.dytt.entity.*;
+import com.dytt.utils.TimeHelper;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
@@ -318,17 +319,43 @@ public class MyDB extends DBHelper {
 		}
 		trans.commit();
 		session.close();
-
-
 		return true;
 	}
 
+
+	/**
+	 * @return
+	 */
+	public static List<InfoSimple> updateDetailsTimes(){
+		StringBuilder sql = new StringBuilder("select id,time,name from detail");
+		sql.append(" order by pagenumber desc");
+		Session session = getSession();
+		Transaction trans = session.beginTransaction();
+		SQLQuery query = session.createSQLQuery(sql.toString()).addEntity(InfoSimple.class);
+
+
+		List<InfoSimple> infos = query.list();
+		for (InfoSimple info:infos){
+			if(info.getTime()!=null && info.getTime().length() ==8){
+				String time = TimeHelper.format(info.getTime());
+				session.createSQLQuery("update detail as b set b.time = '"+time+"' WHERE b.id = "+info.getId()).executeUpdate();
+				System.out.println(time);
+			}
+
+			System.out.println(info.toString());
+		}
+		System.out.println(infos.size());
+		trans.commit();
+		session.close();
+		return infos;
+	}
 
 
 
 
 	
 	public static void main(String[] args) {
+		updateDetailsTimes();
 //		LoginHistory history = new LoginHistory();
 //		history.setDeviceId("fdafdafdaf");
 //		history.setLoginTime("2014-11-23");
@@ -337,7 +364,7 @@ public class MyDB extends DBHelper {
 //		String url = getFirstImageurl(22);
 //		System.out.println(url);
 
-		updateGetMove(2222+"");
+//		updateGetMove(2222+"");
 	}
 	
 }
