@@ -45,8 +45,8 @@ public class MyDB extends DBHelper {
 			}
 		}
 		if(year!=0){
-			int start = year*10000;
-			int end = (year+1)*10000;
+			String start = year+"-00-00";
+			String end = (year)+"-00-00";
 			sql.append(" and time BETWEEN ").append(start).append(" and ").append(end);
 		}
 		sql.append(" order by pagenumber desc");
@@ -65,8 +65,8 @@ public class MyDB extends DBHelper {
 		//SELECT d.id,d.`name`,d.time from detail as d,moveget as m WHERE d.id=m.detailId ORDER BY m.count desc
 		StringBuilder sql = new StringBuilder("SELECT d.id,d.`name`,d.time from detail as d,moveget as m WHERE d.id = m.detailId");
 		if(year!=0){
-			int start = year*10000;
-			int end = (year+1)*10000;
+			String start = year+"-00-00";
+			String end = (year)+"-00-00";
 			sql.append(" and time BETWEEN ").append(start).append(" and ").append(end);
 		}
 		sql.append(" ORDER BY m.count desc");
@@ -85,8 +85,8 @@ public class MyDB extends DBHelper {
 	public static int getHotCount(int year){
 		StringBuilder sb = new StringBuilder("SELECT count(*) from detail as d,moveget as m WHERE d.id=m.detailId");
 		if(year!=0){
-			int start = year*10000;
-			int end = (year+1)*10000;
+			String start = year+"-00-00";
+			String end = (year)+"-00-00";
 			sb.append(" and time BETWEEN ").append(start).append(" and ").append(end);
 		}
 
@@ -193,8 +193,8 @@ public class MyDB extends DBHelper {
 			}
 		}
 		if(year!=0){
-			int start = year*10000;
-			int end = (year+1)*10000;
+			String start = year+"-00-00";
+			String end = (year)+"-00-00";
 			sb.append(" and time BETWEEN ").append(start).append(" and ").append(end);
 		}
 		
