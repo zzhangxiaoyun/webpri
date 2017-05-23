@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="/temp"></constant>
+	<constant name="struts.multipart.maxSize" value="55000000" />
+	<package name="jackbooth" extends="struts-default">
+		<!--<action name="infos" method="getInfoList" class="com.dytt.actions.InfosAction" />-->
+		<!--<action name="detail" method="getDetail" class="com.dytt.actions.DetailAction" />-->
+		<!--<action name="groups" method="getGroups" class="com.dytt.actions.GroupsAction"/>-->
+		<!--<action name="content" method="getDetailContent" class="com.dytt.actions.ContentAction"></action>-->
+		<!--<action name="search" method="searchInfoList" class="com.dytt.actions.SearchAction" />-->
+		<!--<action name="feedback" method="feedback" class="com.dytt.actions.FeedbackAction" />-->
+		<!--<action name="feedbacks" method="getFeedback" class="com.dytt.actions.GetFeedbackAction" />-->
+		<!--<action name="uploadfile" method="uploadfile" class="com.dytt.actions.UploadFileAction" />-->
+		<!--<action name="start" method="getStart" class="com.dytt.actions.StartAction" />-->
+		<!--<action name="movieget" method="movieGet" class="com.dytt.actions.MovieGetAction" />-->
+		<action name="pics" method="getPics" class="com.dytt.actions.PicAction" />
+		<action name="addcarddata" method="addCardData" class="com.dytt.actions.CardDataAction" />
+
+	</package>
+</struts>

@@ -351,6 +351,22 @@ public class MyDB extends DBHelper {
 	}
 
 
+	public static boolean addCardData(int cardId, String cardData){
+		boolean flag = false;
+
+		Session session = getSession();
+		Transaction trans = session.beginTransaction();
+		SQLQuery query = session.createSQLQuery("select card_id from appsearch_all_cards where card_id = "+cardId);
+		int size = query.list().size();
+		if(size == 0){
+			session.save(new CardData(cardId, cardData));
+			flag = true;
+		}
+		trans.commit();
+		session.close();
+		return flag;
+	}
+
 
 
 	

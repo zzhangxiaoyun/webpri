@@ -9,17 +9,16 @@
 		</property>
 		<!-- 
 		<property name="hibernate.connection.url">
-			jdbc:mysql://114.215.134.15:3306/ttdy?rewriteBatchedStatements=true
+			jdbc:mysql://114.215.134.15:3306/test?rewriteBatchedStatements=true
 		</property>
 		 -->
 		<property name="hibernate.connection.url">
-			jdbc:mysql://localhost:3306/dytt?rewriteBatchedStatements=true
+			jdbc:mysql://localhost:3306/test?rewriteBatchedStatements=true
 		</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">hh123456</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="current_session_context_class">thread</property>
-		<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>		
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<mapping resource="hbm/Detail.hbm.xml"/>
@@ -30,5 +29,6 @@
 		<mapping resource="hbm/Config.hbm.xml"/>
 		<mapping resource="hbm/LoginHistory.hbm.xml"/>
 		<mapping resource="hbm/MovieGetInfo.hbm.xml"/>
+		<mapping resource="hbm/CardData.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

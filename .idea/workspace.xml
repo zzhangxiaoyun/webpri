@@ -7,13 +7,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda57fa5-1b8e-4dc9-94d6-3c919cf4130b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dytt/actions/CardDataAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dytt/actions/PicAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dytt/entity/CardData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/dytt/entity/Pic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hbm/CardData.hbm.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/MyDB.class" afterPath="$PROJECT_DIR$/out/production/web/com/dytt/MyDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/InfoSimple.class" afterPath="$PROJECT_DIR$/out/production/web/com/dytt/entity/InfoSimple.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/BaseActionSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/Cache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/DBHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/MyDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/ContentAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/DetailAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/FeedbackAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/GetFeedbackAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/GroupsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/InfosAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/MovieGetAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/SearchAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/StartAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/actions/UploadFileAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/Config.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/Detail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/DownloadUrl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/Feedback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/Info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/InfoSimple.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/LoginHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/MovieGetInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/Pages.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/Response.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/entity/StartEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/handle/LoginHistoryHandle$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/handle/LoginHistoryHandle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/service/DetailService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/utils/ConfigProperties.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/utils/FileUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/com/dytt/utils/TimeHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/Config.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/Detail.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/DownloadUrl.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/Feedback.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/Info.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/InfoSimple.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/LoginHistory.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hbm/MovieGetInfo.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/struts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/web/test/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/BaseActionSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/Cache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/DBHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/MyDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/ContentAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/DetailAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/FeedbackAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/GetFeedbackAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/GroupsAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/InfosAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/SearchAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/StartAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/actions/UploadFileAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/Config.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/Detail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/DownloadUrl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/Feedback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/Info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/InfoSimple.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/LoginHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/Pages.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/Response.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/entity/StartEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/handle/LoginHistoryHandle$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/handle/LoginHistoryHandle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/utils/ConfigProperties.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/utils/FileUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/com/dytt/utils/TimeHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/Config.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/Detail.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/DownloadUrl.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/Feedback.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/Info.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/InfoSimple.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hbm/LoginHistory.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/webt/struts.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/web/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/out/production/web/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dytt/MyDB.java" afterPath="$PROJECT_DIR$/src/com/dytt/MyDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/web.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webpri.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web.iml" afterPath="$PROJECT_DIR$/webpri.iml" />
     </list>
     <ignored path="webt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,60 +132,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="InfosAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/InfosAction.java">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1463#1464#0" expanded="false" />
-                <element signature="e#1485#1486#0" expanded="false" />
-                <element signature="e#1527#1528#0" expanded="false" />
-                <element signature="e#1558#1559#0" expanded="false" />
-                <element signature="e#1588#1589#0" expanded="false" />
-                <element signature="e#1611#1612#0" expanded="false" />
-                <element signature="e#1655#1656#0" expanded="false" />
-                <element signature="e#1688#1689#0" expanded="false" />
-                <element signature="e#1716#1717#0" expanded="false" />
-                <element signature="e#1734#1735#0" expanded="false" />
-                <element signature="e#1771#1772#0" expanded="false" />
-                <element signature="e#1794#1795#0" expanded="false" />
-                <element signature="e#1819#1820#0" expanded="false" />
-                <element signature="e#1837#1838#0" expanded="false" />
-                <element signature="e#1871#1872#0" expanded="false" />
-                <element signature="e#1894#1895#0" expanded="false" />
-                <element signature="e#1921#1922#0" expanded="false" />
-                <element signature="e#1941#1942#0" expanded="false" />
-                <element signature="e#1979#1980#0" expanded="false" />
-                <element signature="e#2006#2007#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDB.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/dytt/MyDB.java">
+      <file leaf-file-name="CardData.hbm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hbm/CardData.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-              <folding>
-                <marker date="1480661124746" expanded="true" signature="3725:3806" ph="select image... imageurls" />
-                <marker date="1480661124746" expanded="true" signature="6005:6042" ph="select type detail" />
-                <marker date="1480661124746" expanded="true" signature="8000:8061" ph="select downl... downloadurls" />
-                <marker date="1480661124746" expanded="true" signature="8356:8411" ph="select image... imageurls" />
-                <marker date="1480661124746" expanded="true" signature="8702:8757" ph="select image... imageurls" />
-                <marker date="1480661124746" expanded="true" signature="8702:8779" ph="select image... imageurls" />
-                <marker date="1480661124746" expanded="true" signature="9106:9151" ph="select conte... detail" />
-                <marker date="1480661124746" expanded="true" signature="10089:10142" ph="select COUNT... moveget" />
-                <marker date="1480661124746" expanded="true" signature="10262:10306" ph="update moveg... " />
-                <marker date="1480661124746" expanded="true" signature="10262:10312" ph="update moveg... " />
-                <marker date="1480661124746" expanded="true" signature="10262:10326" ph="update moveg... " />
-                <marker date="1480661124746" expanded="true" signature="11056:11087" ph="update detai... " />
-                <marker date="1480661124746" expanded="true" signature="11056:11088" ph="update detai... " />
-                <marker date="1480661124746" expanded="true" signature="11056:11089" ph="update detai... " />
-                <marker date="1480661124746" expanded="true" signature="11056:11112" ph="update detai... " />
-              </folding>
+            <state relative-caret-position="-113">
+              <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,6 +164,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>save</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,10 +189,8 @@
         <option value="$PROJECT_DIR$/web/detailpage.html" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/dytt/service/DetailService.java" />
-        <option value="$PROJECT_DIR$/src/com/dytt/actions/DetailAction.java" />
         <option value="$PROJECT_DIR$/src/test/Test.java" />
         <option value="$PROJECT_DIR$/web/detailpage.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/hbm/MovieGetHistory.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/dytt/entity/MovieGetHistory.java" />
         <option value="$PROJECT_DIR$/src/com/dytt/entity/MovieGetInfo.java" />
@@ -138,9 +198,15 @@
         <option value="$PROJECT_DIR$/src/hbm/MovieGetInfo.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/dytt/actions/InfosAction.java" />
         <option value="$PROJECT_DIR$/src/com/dytt/utils/TimeHelper.java" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/com/dytt/entity/InfoSimple.java" />
+        <option value="$PROJECT_DIR$/src/com/dytt/actions/DetailAction.java" />
+        <option value="$PROJECT_DIR$/src/com/dytt/actions/PicAction.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/com/dytt/entity/CardData.java" />
+        <option value="$PROJECT_DIR$/src/hbm/CardData.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/dytt/MyDB.java" />
+        <option value="$PROJECT_DIR$/src/com/dytt/actions/CardDataAction.java" />
       </list>
     </option>
   </component>
@@ -158,20 +224,11 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -188,34 +245,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="webpri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="webpri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="webpri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="webpri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -225,11 +275,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="webpri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="webpri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -243,20 +293,26 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pic" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -264,11 +320,11 @@
       <recent name="com.dytt.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspaceMyeclipse\webpri\src\hbm" />
       <recent name="E:\workspaceMyeclipse\web\web" />
       <recent name="E:\workspaceMyeclipse\webt\lib" />
       <recent name="E:\workspaceMyeclipse\webt\web\WEB-INF" />
       <recent name="E:\workspaceMyeclipse\webt\web" />
-      <recent name="E:\workspaceMyeclipse\webt\src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
@@ -340,9 +396,10 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -352,7 +409,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -360,7 +417,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -385,7 +446,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -563,6 +628,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -579,27 +645,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -627,6 +672,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -700,34 +751,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -738,7 +761,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -755,9 +778,9 @@
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/web/detailpage.jsp" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web">
+        <artifact name="webpri">
           <settings>
-            <option name="CONTEXT_PATH" value="/web" />
+            <option name="CONTEXT_PATH" value="/webpri" />
           </settings>
         </artifact>
         <file path="$PROJECT_DIR$/lib">
@@ -825,7 +848,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web" />
+          <artifact name="webpri" />
         </option>
       </method>
     </configuration>
@@ -874,6 +897,30 @@
         <item index="1" class="java.lang.String" itemvalue="Application.Test" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -899,49 +946,68 @@
       <workItem from="1479796220627" duration="287000" />
       <workItem from="1480398527399" duration="5790000" />
       <workItem from="1480645123459" duration="1123000" />
-      <workItem from="1480647632718" duration="2047000" />
+      <workItem from="1480647632718" duration="2683000" />
+      <workItem from="1486800245623" duration="2374000" />
+      <workItem from="1487906161145" duration="72000" />
+      <workItem from="1487918530485" duration="1800000" />
+      <workItem from="1487929996070" duration="1103000" />
+      <workItem from="1487931119260" duration="1158000" />
+      <workItem from="1488423575594" duration="11000" />
+      <workItem from="1489329848518" duration="1175000" />
+      <workItem from="1489406845495" duration="8000" />
+      <workItem from="1490000731608" duration="1310000" />
+      <workItem from="1495368326795" duration="3017000" />
+      <workItem from="1495372479444" duration="79000" />
+      <workItem from="1495424088735" duration="3770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55092000" />
+    <option name="totallyTimeSpent" value="71605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23522854" sideWeight="0.49409872" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.48658797" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38106602" sideWeight="0.29432908" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.48658797" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2535211" sideWeight="0.31357256" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32748538" sideWeight="0.48382127" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38106602" sideWeight="0.70567095" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04957265" sideWeight="0.4923664" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27525854" sideWeight="0.446885" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16773163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277592" sideWeight="0.48712447" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.48658797" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.48907956" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25150904" sideWeight="0.6864275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8249497" sideWeight="0.42901716" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38845554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23522854" sideWeight="0.49409872" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32348242" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294347" sideWeight="0.49691835" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -979,137 +1045,46 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/InfoSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/DetailAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1798">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/SearchAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/BaseActionSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/webt_war_exploded/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/webt_war_exploded/WEB-INF/classes/struts.xml" />
-    <entry file="file://$PROJECT_DIR$/src/dytt/utils/FileUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/dytt/handle/LoginHistoryHandle.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/InfoSimpleHasPic.java" />
     <entry file="file://$PROJECT_DIR$/web/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/service/DetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3461">
-          <caret line="263" column="13" selection-start-line="263" selection-start-column="13" selection-end-line="263" selection-end-column="13" />
+          <caret line="263" column="13" lean-forward="false" selection-start-line="263" selection-start-column="13" selection-end-line="263" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="744" column="0" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/UploadFileAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/detailpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1117,273 +1092,338 @@
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="49" column="16" selection-start-line="29" selection-start-column="0" selection-end-line="1594" selection-end-column="1" />
+          <caret line="49" column="16" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="1594" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.3.0.Final.jar!/org/hibernate/SharedSessionContract.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/MovieGetInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/StartAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/FeedbackAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/MovieGetAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="e#362#363#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#460#461#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/DetailAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/GetFeedbackAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/GroupsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hbm/Config.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hbm/Detail.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hbm/DownloadUrl.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hbm/Feedback.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hbm/LoginHistory.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/Cache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/BaseActionSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#562#563#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/SearchAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hbm/Info.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hbm/MovieGetInfo.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding />
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hbm/InfoSimple.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/InfoSimple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/utils/TimeHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="744">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#291#292#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-          </folding>
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/FeedbackAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hbm/Feedback.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hbm/InfoSimple.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/InfosAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1463#1464#0" expanded="false" />
-            <element signature="e#1485#1486#0" expanded="false" />
-            <element signature="e#1527#1528#0" expanded="false" />
-            <element signature="e#1558#1559#0" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1611#1612#0" expanded="false" />
-            <element signature="e#1655#1656#0" expanded="false" />
-            <element signature="e#1688#1689#0" expanded="false" />
-            <element signature="e#1716#1717#0" expanded="false" />
-            <element signature="e#1734#1735#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
-            <element signature="e#1794#1795#0" expanded="false" />
-            <element signature="e#1819#1820#0" expanded="false" />
-            <element signature="e#1837#1838#0" expanded="false" />
-            <element signature="e#1871#1872#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1921#1922#0" expanded="false" />
-            <element signature="e#1941#1942#0" expanded="false" />
-            <element signature="e#1979#1980#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/GroupsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/GetFeedbackAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/MovieGetAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31428">
+          <caret line="1205" column="18" lean-forward="false" selection-start-line="1205" selection-start-column="18" selection-end-line="1205" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/Pic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/ContentAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-214">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/SearchAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/StartAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/UploadFileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hbm/Config.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hbm/DownloadUrl.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpri.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1863">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/fastjson-1.1.33.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7236">
+          <caret line="311" column="31" lean-forward="false" selection-start-line="311" selection-start-column="31" selection-end-line="311" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/BaseActionSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/DetailAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/PicAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/service/DetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="157">
+          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dytt/MyDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="238">
+          <caret line="359" column="39" lean-forward="false" selection-start-line="359" selection-start-column="39" selection-end-line="359" selection-end-column="39" />
           <folding>
-            <marker date="1480661124746" expanded="true" signature="3725:3806" ph="select image... imageurls" />
-            <marker date="1480661124746" expanded="true" signature="6005:6042" ph="select type detail" />
-            <marker date="1480661124746" expanded="true" signature="8000:8061" ph="select downl... downloadurls" />
-            <marker date="1480661124746" expanded="true" signature="8356:8411" ph="select image... imageurls" />
-            <marker date="1480661124746" expanded="true" signature="8702:8757" ph="select image... imageurls" />
-            <marker date="1480661124746" expanded="true" signature="8702:8779" ph="select image... imageurls" />
-            <marker date="1480661124746" expanded="true" signature="9106:9151" ph="select conte... detail" />
-            <marker date="1480661124746" expanded="true" signature="10089:10142" ph="select COUNT... moveget" />
-            <marker date="1480661124746" expanded="true" signature="10262:10306" ph="update moveg... " />
-            <marker date="1480661124746" expanded="true" signature="10262:10312" ph="update moveg... " />
-            <marker date="1480661124746" expanded="true" signature="10262:10326" ph="update moveg... " />
-            <marker date="1480661124746" expanded="true" signature="11056:11087" ph="update detai... " />
-            <marker date="1480661124746" expanded="true" signature="11056:11088" ph="update detai... " />
-            <marker date="1480661124746" expanded="true" signature="11056:11089" ph="update detai... " />
-            <marker date="1480661124746" expanded="true" signature="11056:11112" ph="update detai... " />
+            <marker date="1495370196196" expanded="true" signature="3725:3806" ph="select image... imageurls" />
+            <marker date="1495370196196" expanded="true" signature="6005:6042" ph="select type detail" />
+            <marker date="1495370196196" expanded="true" signature="8000:8061" ph="select downl... downloadurls" />
+            <marker date="1495370196196" expanded="true" signature="8356:8411" ph="select image... imageurls" />
+            <marker date="1495370196196" expanded="true" signature="8702:8757" ph="select image... imageurls" />
+            <marker date="1495370196196" expanded="true" signature="8702:8779" ph="select image... imageurls" />
+            <marker date="1495370196196" expanded="true" signature="9106:9151" ph="select conte... detail" />
+            <marker date="1495370196196" expanded="true" signature="10089:10142" ph="select COUNT... moveget" />
+            <marker date="1495370196196" expanded="true" signature="10262:10306" ph="update moveg... " />
+            <marker date="1495370196196" expanded="true" signature="10262:10312" ph="update moveg... " />
+            <marker date="1495370196196" expanded="true" signature="10262:10326" ph="update moveg... " />
+            <marker date="1495370196196" expanded="true" signature="11056:11087" ph="update detai... " />
+            <marker date="1495370196196" expanded="true" signature="11056:11088" ph="update detai... " />
+            <marker date="1495370196196" expanded="true" signature="11056:11089" ph="update detai... " />
+            <marker date="1495370196196" expanded="true" signature="11056:11112" ph="update detai... " />
+            <marker date="1495370196196" expanded="true" signature="11536:11592" ph="select id fr... card_data" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-4.3.0.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="88" column="17" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hbm/CardData.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/actions/CardDataAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dytt/entity/CardData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1392,7 +1432,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>web</last-edited>
+          <last-edited>webpri</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1440,7 +1480,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>web</last-edited>
+          <last-edited>Struts 2|Web|webpri</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
